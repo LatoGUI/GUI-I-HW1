@@ -175,16 +175,19 @@ main {
     color: rgb(66, 63, 114);
 }
 
+/* Resource Styling */
 #resources {
     margin-bottom: 10px;
 }
 
+/* Resource list styling */
 #resources > ul {
     list-style-type: none;
     font-size: 20px;
     color: rgb(66, 63, 114);
 }
 
+/* Resource link styling */
 #resources a {
     text-decoration: underline;
 }
