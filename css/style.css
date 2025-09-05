@@ -1,0 +1,190 @@
+/* Remove default styles */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* General base styling */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(236, 162, 77);
+    color: rgb(48, 46, 83);
+}
+
+/* Base margin for headings */
+h1, h2 {
+    margin: 15px;
+}
+
+/* Increase h1 font */
+h1 {
+    font-size: 40px;
+}
+
+/* Increase h2 font */
+h2 {
+    font-size: 30px;
+}
+
+/* Link base style */
+a {
+    text-decoration: none;
+    color: rgb(48, 46, 83);
+}
+
+/* Remove default link styling */
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+/* Navigation styling */
+nav {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navigation links styling */
+nav > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(255,242,164);
+    border: 2px solid rgb(180,83,38); 
+    border-radius: 6px; 
+    text-decoration: none; 
+    color: rgb(180,83,38); 
+    transition: all 0.2s ease-in-out; 
+    cursor: pointer;
+}
+
+/* Navigation link hover */
+nav > a:hover {
+    background-color: rgb(240, 227, 154);
+}
+
+/* Navigation link click */
+nav > a:active {
+    background-color: rgb(224, 212, 145);
+}
+
+/* The main section in body */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Text styling in intro */
+#intro > p {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(66, 63, 114);
+}
+
+/* Equipment list styling */
+#equipment > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(66, 63, 114);
+}
+
+/* Table styling */
+#ingredients > table,
+#nutrition > table {
+    font-size: 20px;
+    color: rgb(180,83,38);
+    background-color: rgb(255,242,164);
+    border: 2px solid rgb(180,83,38); 
+    border-radius: 6px; 
+    border-collapse: collapse;
+}
+
+/* Table contents styling */
+#ingredients > table th,
+#ingredients > table td,
+#nutrition > table th,
+#nutrition > table td {
+    border: 2px solid rgb(180,83,38); 
+    padding: 8px 12px;
+    text-align: center; 
+}
+
+/* Instruction styling */
+#instructions > ol {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: 20px;
+    color: rgb(66, 63, 114);
+}
+
+/* Image section styling */
+#gallery > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#gallery figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+/* Image styling */
+#gallery img {
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+/* Image hover styling */
+#gallery img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image caption */
+#gallery figcaption {
+    font-size: 20px;
+    color: rgb(66, 63, 114);
+}
+
+#resources {
+    margin-bottom: 10px;
+}
+
+#resources > ul {
+    list-style-type: none;
+    font-size: 20px;
+    color: rgb(66, 63, 114);
+}
+
+#resources a {
+    text-decoration: underline;
+}
